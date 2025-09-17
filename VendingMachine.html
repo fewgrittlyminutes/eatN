@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eat@N | Vending Machine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/food-theme.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-food fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="HomePage.php">
+      <i class="fas fa-utensils me-2"></i>
+      Eat@N
+    </a>
+    
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="HomePage.php">
+            <i class="fas fa-home me-1"></i>Home
+          </a>
+        </li>
+        
+        <!-- Restaurants Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="restaurantsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-store me-1"></i>Restaurants
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="restaurantsDropdown">
+            <li><a class="dropdown-item" href="finagle.php">
+              <i class="fas fa-coffee me-2"></i>Finagle Café
+            </a></li>
+            <li><a class="dropdown-item" href="tandoor.php">
+              <i class="fas fa-fire me-2"></i>Tandoor
+            </a></li>
+            <li><a class="dropdown-item" href="serenity.php">
+              <i class="fas fa-leaf me-2"></i>Serenity
+            </a></li>
+            <li><a class="dropdown-item" href="freshjuice.php">
+              <i class="fas fa-glass-whiskey me-2"></i>Fresh Juice
+            </a></li>
+            <li><a class="dropdown-item" href="cuisin.php">
+              <i class="fas fa-hamburger me-2"></i>Cuisin
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="THE EDGE.html">
+              <i class="fas fa-building me-2"></i>THE EDGE
+            </a></li>
+            <li><a class="dropdown-item active" href="VendingMachine.html">
+              <i class="fas fa-shopping-cart me-2"></i>Vending Machine
+            </a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">
+            <i class="fas fa-images me-1"></i>Gallery
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">
+            <i class="fas fa-info-circle me-1"></i>About Us
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="ContactUs.html">
+            <i class="fas fa-phone me-1"></i>Contact
+          </a>
+        </li>
+      </ul>
+      
+      <!-- User Authentication Section -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Login.php">
+            <i class="fas fa-sign-in-alt me-1"></i>Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-food ms-2" href="SignUp.php">
+            <i class="fas fa-user-plus me-1"></i>Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-food py-5">
+  <div class="hero-overlay">
+    <div class="container text-center text-white">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Smart Vending Solutions</h1>
+          <p class="lead mb-4">Quick, convenient access to snacks, beverages, and essentials throughout NSBM campus. Available 24/7 for your convenience.</p>
+          <div class="hero-stats d-flex justify-content-center gap-4 mt-4">
+            <div class="stat-item">
+              <i class="fas fa-clock fa-2x mb-2"></i>
+              <p class="mb-0">24/7 Available</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-credit-card fa-2x mb-2"></i>
+              <p class="mb-0">Cashless Payment</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-bolt fa-2x mb-2"></i>
+              <p class="mb-0">Instant Service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vending Machine Locations -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Vending Machine Locations</h2>
+        <p class="lead text-muted">Find your nearest vending machine on campus</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card card-food h-100 text-center p-4">
+          <i class="fas fa-building fa-3x text-primary-orange mb-3"></i>
+          <h5>Main Building Lobby</h5>
+          <p class="text-muted mb-3">Ground floor, near reception</p>
+          <div class="features">
+            <span class="badge bg-secondary me-2">Snacks</span>
+            <span class="badge bg-secondary me-2">Beverages</span>
+            <span class="badge bg-secondary">Cold Drinks</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card card-food h-100 text-center p-4">
+          <i class="fas fa-graduation-cap fa-3x text-secondary-green mb-3"></i>
+          <h5>Faculty Building</h5>
+          <p class="text-muted mb-3">Second floor, near lecture halls</p>
+          <div class="features">
+            <span class="badge bg-secondary me-2">Energy Drinks</span>
+            <span class="badge bg-secondary me-2">Coffee</span>
+            <span class="badge bg-secondary">Sandwiches</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card card-food h-100 text-center p-4">
+          <i class="fas fa-home fa-3x text-accent-red mb-3"></i>
+          <h5>Hostel Area</h5>
+          <p class="text-muted mb-3">Ground floor, common area</p>
+          <div class="features">
+            <span class="badge bg-secondary me-2">Instant Noodles</span>
+            <span class="badge bg-secondary me-2">Chips</span>
+            <span class="badge bg-secondary">Juice</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Categories -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Available Products</h2>
+        <p class="lead text-muted">Wide variety of snacks and beverages</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Beverages -->
+      <div class="col-lg-3 col-md-6">
+        <div class="product-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-coffee fa-3x text-primary-orange mb-3"></i>
+            <h4>Beverages</h4>
+          </div>
+          <div class="product-list p-4 pt-0">
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Coca Cola</span>
+              <span class="price">Rs. 80</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Pepsi</span>
+              <span class="price">Rs. 80</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Fresh Orange Juice</span>
+              <span class="price">Rs. 120</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Iced Coffee</span>
+              <span class="price">Rs. 150</span>
+            </div>
+            <div class="product-item d-flex justify-content-between">
+              <span>Energy Drink</span>
+              <span class="price">Rs. 200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snacks -->
+      <div class="col-lg-3 col-md-6">
+        <div class="product-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-cookie-bite fa-3x text-secondary-green mb-3"></i>
+            <h4>Snacks</h4>
+          </div>
+          <div class="product-list p-4 pt-0">
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Lay's Chips</span>
+              <span class="price">Rs. 60</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Chocolate Bar</span>
+              <span class="price">Rs. 90</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Cookies Pack</span>
+              <span class="price">Rs. 100</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Nuts Mix</span>
+              <span class="price">Rs. 180</span>
+            </div>
+            <div class="product-item d-flex justify-content-between">
+              <span>Protein Bar</span>
+              <span class="price">Rs. 250</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Meals -->
+      <div class="col-lg-3 col-md-6">
+        <div class="product-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-hamburger fa-3x text-accent-red mb-3"></i>
+            <h4>Quick Meals</h4>
+          </div>
+          <div class="product-list p-4 pt-0">
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Instant Noodles</span>
+              <span class="price">Rs. 120</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Sandwich</span>
+              <span class="price">Rs. 200</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Cup Noodles</span>
+              <span class="price">Rs. 150</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Hot Dog</span>
+              <span class="price">Rs. 180</span>
+            </div>
+            <div class="product-item d-flex justify-content-between">
+              <span>Wrap</span>
+              <span class="price">Rs. 220</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essentials -->
+      <div class="col-lg-3 col-md-6">
+        <div class="product-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-shopping-basket fa-3x text-primary-orange mb-3"></i>
+            <h4>Essentials</h4>
+          </div>
+          <div class="product-list p-4 pt-0">
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Water Bottle</span>
+              <span class="price">Rs. 50</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Tissues Pack</span>
+              <span class="price">Rs. 40</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Hand Sanitizer</span>
+              <span class="price">Rs. 80</span>
+            </div>
+            <div class="product-item d-flex justify-content-between mb-2">
+              <span>Mints</span>
+              <span class="price">Rs. 30</span>
+            </div>
+            <div class="product-item d-flex justify-content-between">
+              <span>Chewing Gum</span>
+              <span class="price">Rs. 25</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">How to Use Vending Machines</h2>
+        <p class="lead text-muted">Simple steps to get your favorite snacks</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="step-card text-center p-4">
+          <div class="step-number mb-3">
+            <span class="badge bg-primary-orange rounded-circle p-3 fs-4">1</span>
+          </div>
+          <i class="fas fa-search fa-2x text-primary-orange mb-3"></i>
+          <h5>Select Product</h5>
+          <p class="text-muted">Browse and choose your desired item from the display</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="step-card text-center p-4">
+          <div class="step-number mb-3">
+            <span class="badge bg-secondary-green rounded-circle p-3 fs-4">2</span>
+          </div>
+          <i class="fas fa-credit-card fa-2x text-secondary-green mb-3"></i>
+          <h5>Make Payment</h5>
+          <p class="text-muted">Pay using cash, card, or mobile payment methods</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="step-card text-center p-4">
+          <div class="step-number mb-3">
+            <span class="badge bg-accent-red rounded-circle p-3 fs-4">3</span>
+          </div>
+          <i class="fas fa-hand-paper fa-2x text-accent-red mb-3"></i>
+          <h5>Collect Item</h5>
+          <p class="text-muted">Retrieve your product from the collection slot</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="step-card text-center p-4">
+          <div class="step-number mb-3">
+            <span class="badge bg-primary-orange rounded-circle p-3 fs-4">4</span>
+          </div>
+          <i class="fas fa-smile fa-2x text-primary-orange mb-3"></i>
+          <h5>Enjoy!</h5>
+          <p class="text-muted">Enjoy your fresh snack or refreshing beverage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Vending Machine Gallery</h2>
+        <p class="lead text-muted">See our modern vending facilities</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="images/VenMach2.jpg" alt="Vending Machine 1" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="images/VenMach3.jpeg" alt="Vending Machine 2" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="images/VenMach4.jpeg" alt="Vending Machine 3" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-food">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="footer-brand">
+          <h5 class="text-white mb-3">
+            <i class="fas fa-utensils me-2"></i>Eat@N
+          </h5>
+          <p class="text-light">Your premier dining destination at NSBM Green University. Experience diverse cuisines and exceptional service.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="footer-contact">
+          <h6 class="text-white mb-3">Contact Information</h6>
+          <p class="text-light mb-2">
+            <i class="fas fa-map-marker-alt me-2"></i>NSBM Green University, Homagama
+          </p>
+          <p class="text-light mb-2">
+            <i class="fas fa-phone me-2"></i>+94 11 544 5000
+          </p>
+          <p class="text-light">
+            <i class="fas fa-envelope me-2"></i>info@eatn.lk
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light my-4">
+    <div class="text-center">
+      <p class="text-light mb-0">&copy; 2024 Eat@N. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Navbar Styles -->
+<style>
+  body { 
+    padding-top: 80px; 
+  }
+  
+  /* Custom dropdown styles */
+  .dropdown-menu {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-top: 3px solid var(--primary-orange, #ff6b35);
+  }
+  
+  .dropdown-item {
+    padding: 0.75rem 1.25rem;
+    color: #343a40;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background: var(--primary-orange, #ff6b35);
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .dropdown-item.active {
+    background: var(--primary-orange, #ff6b35);
+    color: white;
+  }
+  
+  .dropdown-header {
+    color: #3c2415;
+    font-weight: 600;
+    padding: 1rem 1.25rem 0.5rem;
+  }
+  
+  .dropdown-divider {
+    margin: 0.5rem 0;
+    border-color: #e9ecef;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 991.98px) {
+    .navbar-nav .dropdown-menu {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding-left: 1rem;
+    }
+    
+    .navbar-nav .dropdown-item {
+      color: #faf0e6;
+      padding: 0.5rem 1rem;
+    }
+    
+    .navbar-nav .dropdown-item:hover {
+      background: rgba(255, 107, 53, 0.2);
+      transform: none;
+    }
+    
+    body {
+      padding-top: 76px;
+    }
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

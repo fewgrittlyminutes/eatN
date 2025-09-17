@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Eat@N</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Food Theme CSS -->
+  <link rel="stylesheet" href="css/food-theme.css">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about Eat@N - Your premier food discovery platform for NSBM Green University campus dining.">
+  <meta name="keywords" content="about eat@n, NSBM food, campus dining, student services, university restaurants">
+</head>
+<body>
+
+<?php
+session_start();
+include 'includes/navbar.php'; 
+?>
+
+<!-- Hero Section -->
+<section class="hero-food" style="background: linear-gradient(135deg, var(--secondary-green) 0%, var(--secondary-green-light) 100%);">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-2 mb-4">About Eat@N</h1>
+        <p class="lead mb-4">
+          Your premier food discovery platform, connecting students with the best dining experiences at NSBM Green University.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <span class="badge bg-light text-dark p-2">
+            <i class="fas fa-users me-2"></i>Serving 1000+ Students
+          </span>
+          <span class="badge bg-light text-dark p-2">
+            <i class="fas fa-store me-2"></i>5+ Restaurant Partners
+          </span>
+          <span class="badge bg-light text-dark p-2">
+            <i class="fas fa-clock me-2"></i>Since 2024
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="images/NSBM.jpg" alt="NSBM Campus" class="img-fluid rounded-food-lg shadow-food-heavy" style="max-height: 400px;">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Story Section -->
+<section class="section-food">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Story</h2>
+      <p class="section-subtitle">
+        Born from the need to simplify campus dining for students at NSBM Green University
+      </p>
+    </div>
+    
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="card-food p-4">
+          <h3 class="text-primary mb-3">
+            <i class="fas fa-lightbulb me-2"></i>The Beginning
+          </h3>
+          <p class="mb-3">
+            Eat@N was born from a simple observation: students at NSBM Green University were spending 
+            valuable time searching for food options across campus. We realized there was a need for 
+            a centralized platform that could connect students with all available dining options.
+          </p>
+          <p>
+            What started as a student project has evolved into the premier food discovery platform 
+            for our campus community, serving over 1000+ students daily.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/E1.jpeg" alt="Campus Food" class="img-fluid rounded-food-lg shadow-food">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="section-food bg-food-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card-food h-100 text-center p-4">
+          <div class="mb-4">
+            <i class="fas fa-bullseye display-4 text-primary"></i>
+          </div>
+          <h3 class="text-primary mb-3">Our Mission</h3>
+          <p>
+            To revolutionize campus dining by providing students with seamless access to food options, 
+            real-time availability, and exceptional convenience. We strive to support both students 
+            and local food vendors through innovative technology solutions.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-food h-100 text-center p-4">
+          <div class="mb-4">
+            <i class="fas fa-eye display-4 text-secondary"></i>
+          </div>
+          <h3 class="text-secondary mb-3">Our Vision</h3>
+          <p>
+            To become the leading campus food platform in Sri Lanka, creating a connected community 
+            where students can easily discover, order, and enjoy quality meals while fostering 
+            relationships with local food entrepreneurs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section-food">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Eat@N?</h2>
+      <p class="section-subtitle">
+        We're more than just a food platform - we're your campus dining companion
+      </p>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="mb-3">
+            <i class="fas fa-search display-4 text-primary"></i>
+          </div>
+          <h5>Easy Discovery</h5>
+          <p class="text-muted">
+            Find all campus food options in one place with detailed menus and pricing information.
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="mb-3">
+            <i class="fas fa-dollar-sign display-4 text-secondary"></i>
+          </div>
+          <h5>Student-Friendly Prices</h5>
+          <p class="text-muted">
+            All our partner restaurants offer affordable meal options designed for student budgets.
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="mb-3">
+            <i class="fas fa-clock display-4 text-warning"></i>
+          </div>
+          <h5>Quick & Convenient</h5>
+          <p class="text-muted">
+            Order ahead and skip the queues with our efficient ordering system.
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="mb-3">
+            <i class="fas fa-star display-4 text-accent"></i>
+          </div>
+          <h5>Quality Assured</h5>
+          <p class="text-muted">
+            We partner only with restaurants that meet our high standards for food quality and service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team Section -->
+<section class="section-food bg-food-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Our Team</h2>
+      <p class="section-subtitle">
+        The passionate individuals working to improve your campus dining experience
+      </p>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="card-food text-center p-4">
+          <div class="mb-3">
+            <i class="fas fa-user-circle display-4 text-primary"></i>
+          </div>
+          <h5>Development Team</h5>
+          <p class="text-muted mb-3">
+            Our skilled developers work continuously to improve the platform and add new features.
+          </p>
+          <div class="d-flex justify-content-center gap-2">
+            <span class="badge bg-food-primary">PHP</span>
+            <span class="badge bg-food-primary">JavaScript</span>
+            <span class="badge bg-food-primary">MySQL</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card-food text-center p-4">
+          <div class="mb-3">
+            <i class="fas fa-users display-4 text-secondary"></i>
+          </div>
+          <h5>Student Relations</h5>
+          <p class="text-muted mb-3">
+            Our student liaison team ensures that Eat@N meets the real needs of the campus community.
+          </p>
+          <div class="d-flex justify-content-center gap-2">
+            <span class="badge bg-food-secondary">Support</span>
+            <span class="badge bg-food-secondary">Feedback</span>
+            <span class="badge bg-food-secondary">Events</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card-food text-center p-4">
+          <div class="mb-3">
+            <i class="fas fa-handshake display-4 text-accent"></i>
+          </div>
+          <h5>Partnership Team</h5>
+          <p class="text-muted mb-3">
+            We work closely with campus restaurants to ensure they can serve you better through our platform.
+          </p>
+          <div class="d-flex justify-content-center gap-2">
+            <span class="badge bg-food-accent">Partnerships</span>
+            <span class="badge bg-food-accent">Quality</span>
+            <span class="badge bg-food-accent">Growth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-food">
+  <div class="container">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">
+        Have questions, suggestions, or want to partner with us? We'd love to hear from you!
+      </p>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-8">
+        <div class="card-food p-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                <div>
+                  <h6 class="mb-1">Email Us</h6>
+                  <a href="mailto:info@eatn.nsbm.ac.lk" class="text-primary">info@eatn.nsbm.ac.lk</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-phone fa-2x text-secondary me-3"></i>
+                <div>
+                  <h6 class="mb-1">Call Us</h6>
+                  <a href="tel:+94115445000" class="text-secondary">+94 11 544 5000</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-map-marker-alt fa-2x text-warning me-3"></i>
+                <div>
+                  <h6 class="mb-1">Visit Us</h6>
+                  <p class="mb-0 text-muted">NSBM Green University<br>Mahenwatta, Pitipana</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-clock fa-2x text-accent me-3"></i>
+                <div>
+                  <h6 class="mb-1">Support Hours</h6>
+                  <p class="mb-0 text-muted">Mon-Fri: 8:00 AM - 6:00 PM<br>Weekend: 10:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <a href="ContactUs.html" class="btn btn-food me-3">
+              <i class="fas fa-paper-plane me-2"></i>Send Message
+            </a>
+            <a href="HomePage.php" class="btn btn-outline-food">
+              <i class="fas fa-home me-2"></i>Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php include 'includes/footer.php'; ?>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+  // Add animation class to elements when they come into view
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in-up');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all card elements and sections
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.card-food, .section-title, .text-center').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
+</html>
