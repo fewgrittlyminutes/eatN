@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eat@N | The Edge Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/food-theme.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-food fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="HomePage.php">
+      <i class="fas fa-utensils me-2"></i>
+      Eat@N
+    </a>
+    
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="HomePage.php">
+            <i class="fas fa-home me-1"></i>Home
+          </a>
+        </li>
+        
+        <!-- Restaurants Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="restaurantsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-store me-1"></i>Restaurants
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="restaurantsDropdown">
+            <li><a class="dropdown-item" href="finagle.php">
+              <i class="fas fa-coffee me-2"></i>Finagle Café
+            </a></li>
+            <li><a class="dropdown-item" href="tandoor.php">
+              <i class="fas fa-fire me-2"></i>Tandoor
+            </a></li>
+            <li><a class="dropdown-item" href="serenity.php">
+              <i class="fas fa-leaf me-2"></i>Serenity
+            </a></li>
+            <li><a class="dropdown-item" href="freshjuice.php">
+              <i class="fas fa-glass-whiskey me-2"></i>Fresh Juice
+            </a></li>
+            <li><a class="dropdown-item" href="cuisin.php">
+              <i class="fas fa-hamburger me-2"></i>Cuisin
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item active" href="THE EDGE.html">
+              <i class="fas fa-building me-2"></i>THE EDGE
+            </a></li>
+            <li><a class="dropdown-item" href="VendingMachine.html">
+              <i class="fas fa-shopping-cart me-2"></i>Vending Machine
+            </a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">
+            <i class="fas fa-images me-1"></i>Gallery
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">
+            <i class="fas fa-info-circle me-1"></i>About Us
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="ContactUs.html">
+            <i class="fas fa-phone me-1"></i>Contact
+          </a>
+        </li>
+      </ul>
+      
+      <!-- User Authentication Section -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Login.php">
+            <i class="fas fa-sign-in-alt me-1"></i>Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-food ms-2" href="SignUp.php">
+            <i class="fas fa-user-plus me-1"></i>Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-food py-5">
+  <div class="hero-overlay">
+    <div class="container text-center text-white">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">The Edge Restaurant</h1>
+          <p class="lead mb-4">Experience premium dining at NSBM's signature restaurant. Offering gourmet cuisine in a sophisticated atmosphere with exceptional service.</p>
+          <div class="hero-stats d-flex justify-content-center gap-4 mt-4">
+            <div class="stat-item">
+              <i class="fas fa-star fa-2x mb-2"></i>
+              <p class="mb-0">Premium Quality</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock fa-2x mb-2"></i>
+              <p class="mb-0">6AM - 11PM</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-utensils fa-2x mb-2"></i>
+              <p class="mb-0">Fine Dining</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="#menu" class="btn-food me-3">
+              <i class="fas fa-scroll me-2"></i>View Menu
+            </a>
+            <a href="#contact" class="btn-food-outline">
+              <i class="fas fa-phone me-2"></i>Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Restaurant -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="restaurant-info">
+          <h2 class="section-title text-start">About The Edge</h2>
+          <p class="lead">The Edge represents the pinnacle of campus dining, where culinary artistry meets modern sophistication.</p>
+          <p>Our master chefs craft each dish with precision and passion, using only the finest ingredients to create memorable dining experiences. From breakfast classics to gourmet dinners, The Edge delivers excellence in every bite.</p>
+          
+          <div class="features-list mt-4">
+            <div class="feature-item d-flex align-items-center mb-3">
+              <i class="fas fa-chef-hat fa-2x text-primary-orange me-3"></i>
+              <div>
+                <h5 class="mb-1">Expert Chefs</h5>
+                <p class="mb-0">Professional culinary team with years of experience</p>
+              </div>
+            </div>
+            <div class="feature-item d-flex align-items-center mb-3">
+              <i class="fas fa-leaf fa-2x text-secondary-green me-3"></i>
+              <div>
+                <h5 class="mb-1">Fresh Ingredients</h5>
+                <p class="mb-0">Daily sourced premium ingredients for optimal taste</p>
+              </div>
+            </div>
+            <div class="feature-item d-flex align-items-center">
+              <i class="fas fa-wine-glass fa-2x text-accent-red me-3"></i>
+              <div>
+                <h5 class="mb-1">Fine Dining</h5>
+                <p class="mb-0">Elegant atmosphere perfect for special occasions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="restaurant-gallery">
+          <div class="row g-3">
+            <div class="col-6">
+              <img src="images/Edge.jpeg" alt="The Edge Interior" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-6">
+              <img src="images/Edge2.jpeg" alt="The Edge Dining" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-6">
+              <img src="images/Edge3.jpeg" alt="The Edge Kitchen" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-6">
+              <img src="images/Edge4.jpeg" alt="The Edge Service" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Our Signature Menu</h2>
+        <p class="lead text-muted">Discover our carefully curated selection of premium dishes</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Breakfast -->
+      <div class="col-lg-4">
+        <div class="menu-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-sun fa-3x text-primary-orange mb-3"></i>
+            <h3>Breakfast</h3>
+            <p class="text-muted">Start your day right</p>
+          </div>
+          <div class="menu-items p-4 pt-0">
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Gourmet Pancakes</h6>
+                <small class="text-muted">With fresh berries & maple syrup</small>
+              </div>
+              <span class="price">Rs. 650</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Eggs Benedict</h6>
+                <small class="text-muted">Poached eggs on English muffin</small>
+              </div>
+              <span class="price">Rs. 750</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6>Avocado Toast</h6>
+                <small class="text-muted">Artisan bread with premium avocado</small>
+              </div>
+              <span class="price">Rs. 550</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="col-lg-4">
+        <div class="menu-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-utensils fa-3x text-secondary-green mb-3"></i>
+            <h3>Lunch</h3>
+            <p class="text-muted">Midday delights</p>
+          </div>
+          <div class="menu-items p-4 pt-0">
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Grilled Salmon</h6>
+                <small class="text-muted">With quinoa and seasonal vegetables</small>
+              </div>
+              <span class="price">Rs. 1,200</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Beef Tenderloin</h6>
+                <small class="text-muted">Prime cut with truffle sauce</small>
+              </div>
+              <span class="price">Rs. 1,500</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6>Caesar Salad</h6>
+                <small class="text-muted">Classic recipe with grilled chicken</small>
+              </div>
+              <span class="price">Rs. 850</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dinner -->
+      <div class="col-lg-4">
+        <div class="menu-category card-food h-100">
+          <div class="category-header text-center p-4">
+            <i class="fas fa-moon fa-3x text-accent-red mb-3"></i>
+            <h3>Dinner</h3>
+            <p class="text-muted">Evening specialties</p>
+          </div>
+          <div class="menu-items p-4 pt-0">
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Lobster Thermidor</h6>
+                <small class="text-muted">Premium lobster in creamy sauce</small>
+              </div>
+              <span class="price">Rs. 2,500</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6>Duck Confit</h6>
+                <small class="text-muted">Slow-cooked duck leg with cherry sauce</small>
+              </div>
+              <span class="price">Rs. 1,800</span>
+            </div>
+            <div class="menu-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6>Mushroom Risotto</h6>
+                <small class="text-muted">Creamy Arborio rice with wild mushrooms</small>
+              </div>
+              <span class="price">Rs. 950</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Special Features -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Why Choose The Edge?</h2>
+        <p class="lead text-muted">Exceptional dining experience awaits you</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card text-center p-4">
+          <i class="fas fa-award fa-3x text-primary-orange mb-3"></i>
+          <h5>Award Winning</h5>
+          <p class="text-muted">Recognized for culinary excellence and service quality</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card text-center p-4">
+          <i class="fas fa-clock fa-3x text-secondary-green mb-3"></i>
+          <h5>Extended Hours</h5>
+          <p class="text-muted">Open from 6 AM to 11 PM for your convenience</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card text-center p-4">
+          <i class="fas fa-heart fa-3x text-accent-red mb-3"></i>
+          <h5>Special Events</h5>
+          <p class="text-muted">Perfect venue for celebrations and corporate events</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card text-center p-4">
+          <i class="fas fa-shipping-fast fa-3x text-primary-orange mb-3"></i>
+          <h5>Quick Service</h5>
+          <p class="text-muted">Fast delivery and takeaway options available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact & Order -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="card-food p-5">
+          <h2 class="section-title">Ready to Experience The Edge?</h2>
+          <p class="lead text-muted mb-4">Join us for an unforgettable dining experience</p>
+          
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <div class="contact-info d-flex align-items-center justify-content-center p-3 border rounded">
+                <i class="fas fa-map-marker-alt fa-2x text-primary-orange me-3"></i>
+                <div>
+                  <h6 class="mb-1">Location</h6>
+                  <p class="mb-0">NSBM Green University Campus</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-info d-flex align-items-center justify-content-center p-3 border rounded">
+                <i class="fas fa-clock fa-2x text-secondary-green me-3"></i>
+                <div>
+                  <h6 class="mb-1">Hours</h6>
+                  <p class="mb-0">6:00 AM - 11:00 PM Daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-buttons">
+            <a href="HomePage.php" class="btn-food me-3">
+              <i class="fas fa-home me-2"></i>Order Online
+            </a>
+            <a href="ContactUs.html" class="btn-food-outline">
+              <i class="fas fa-phone me-2"></i>Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-food">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="footer-brand">
+          <h5 class="text-white mb-3">
+            <i class="fas fa-utensils me-2"></i>Eat@N
+          </h5>
+          <p class="text-light">Your premier dining destination at NSBM Green University. Experience diverse cuisines and exceptional service.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="footer-contact">
+          <h6 class="text-white mb-3">Contact Information</h6>
+          <p class="text-light mb-2">
+            <i class="fas fa-map-marker-alt me-2"></i>NSBM Green University, Homagama
+          </p>
+          <p class="text-light mb-2">
+            <i class="fas fa-phone me-2"></i>+94 11 544 5000
+          </p>
+          <p class="text-light">
+            <i class="fas fa-envelope me-2"></i>info@eatn.lk
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light my-4">
+    <div class="text-center">
+      <p class="text-light mb-0">&copy; 2024 Eat@N. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Navbar Styles -->
+<style>
+  body { 
+    padding-top: 80px; 
+  }
+  
+  /* Custom dropdown styles */
+  .dropdown-menu {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-top: 3px solid var(--primary-orange, #ff6b35);
+  }
+  
+  .dropdown-item {
+    padding: 0.75rem 1.25rem;
+    color: #343a40;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background: var(--primary-orange, #ff6b35);
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .dropdown-item.active {
+    background: var(--primary-orange, #ff6b35);
+    color: white;
+  }
+  
+  .dropdown-header {
+    color: #3c2415;
+    font-weight: 600;
+    padding: 1rem 1.25rem 0.5rem;
+  }
+  
+  .dropdown-divider {
+    margin: 0.5rem 0;
+    border-color: #e9ecef;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 991.98px) {
+    .navbar-nav .dropdown-menu {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding-left: 1rem;
+    }
+    
+    .navbar-nav .dropdown-item {
+      color: #faf0e6;
+      padding: 0.5rem 1rem;
+    }
+    
+    .navbar-nav .dropdown-item:hover {
+      background: rgba(255, 107, 53, 0.2);
+      transform: none;
+    }
+    
+    body {
+      padding-top: 76px;
+    }
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
